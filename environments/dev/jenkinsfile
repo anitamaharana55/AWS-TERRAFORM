@@ -42,10 +42,10 @@ pipeline {
             }
         }
 
-        stage('Apply') {
+        stage('destroy') {
             steps {
                 dir("environments/dev") {
-                    bat 'terraform destroy -input=false tfplan'
+                    bat 'terraform destroy'
                 }
             }
         }
