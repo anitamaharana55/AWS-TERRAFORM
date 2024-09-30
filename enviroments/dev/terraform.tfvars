@@ -13,7 +13,7 @@ bucket_config = [{
   }
 },
 {
-  bucket = "my-test-bucket824912"
+  bucket = "my-bucket824912"
   tags = {
     Name        = "My bucket"
     Environment = "Dev"
