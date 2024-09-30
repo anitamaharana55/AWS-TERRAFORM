@@ -45,7 +45,7 @@ pipeline {
         stage('Apply') {
             steps {
                 dir("environments/dev") {
-                    bat 'terraform apply -input=false tfplan'
+                    bat 'terraform destroy -input=false tfplan'
                 }
             }
         }
